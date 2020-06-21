@@ -1,0 +1,514 @@
+/* Reusable--------------------------*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+html{
+    background-color: azure;
+    color: rgba(0, 0, 0, 0.842);
+    font-family: 'Caladea', serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+
+}
+
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+   padding: 60px 0px;  
+
+}
+
+
+
+/* Long paragraphs*/
+
+.long_copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 110%;
+}
+
+.box{
+    padding: 1px;
+}
+
+.box p{
+    font-size: 95%;
+    line-height: 145%;
+}
+
+/* -----------------Headers -------------------------------------------------- */
+
+header{
+    background-image:linear-gradient(rgba(5, 5, 5, 0.616) ,rgba(5, 5, 5, 0.616)) ,url(img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,h2{
+   
+    font-size: 230%;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgba(236, 225, 225, 0.842);
+    word-spacing: 4px;
+
+}
+
+h2{
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color:#e74c3c ;
+    content: " ";
+    width: 1140px;
+}
+
+h3{
+    font-size: 110%;
+    padding-bottom: 5px;
+    
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+}
+
+.main_nav{
+ float: right;
+ list-style: none;
+ margin-top: 60px;
+
+}
+.main_nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px 10px;
+    font-weight: 300;
+    
+}
+
+.main_nav li a:link,
+.main_nav li a:visited
+{
+ text-decoration: none;
+ color: cornsilk;
+ text-transform: uppercase;
+ font-size: 90%;
+ 
+ border-bottom: 2px solid transparent;
+
+}
+
+.main_nav li a:hover,
+.main_nav li a:active{
+  padding: 8px 0px;  
+ border-bottom: 2px solid  #e74c3c;
+    
+}
+
+/*  -----------------------------------------ICONS ------------------------------------- */
+/*---------------------------------------------------------------------------------------*/
+
+
+.icon_big{
+    font-size: 400%;
+    color:#d35400 ;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: wavy;
+    padding: 0px 10px;
+}
+
+
+/*  -------------------------------Buttons Stylings ------------------------------------- */
+/*---------------------------------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+display: inline-block;
+padding: 10px 30px;
+font-weight: 300;
+text-decoration: none;
+color: cornsilk;
+border-radius: 200px; 
+transition: cubic-bezier(0.4, 0.610, 0.355, 1);
+
+
+}
+
+.btn_full:link,
+.btn_full:visited,
+input[type=submit]:link,
+input[type=submit]:visited{
+ background-color: #d35400; 
+ border: 1px solid #d35400;
+ margin-right: 15px;
+  
+ 
+}
+
+.btn_ghost:link,
+.btn_ghost:visited{
+border: 1px solid #d35400;
+
+}
+
+.btn_full:hover,
+.btn_full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+ background-color:#ff6905 ;
+
+}
+
+.btn_ghost:hover,
+.btn_ghost:active {
+ background-color:#f8660450 ;
+
+}
+
+/* --------------------MEALS----------------------------------------------*/
+.sec_meals{
+    padding: 0;
+}
+
+.meals_showcase{
+     width: 100%;
+     list-style: none;
+
+}
+
+.meals_showcase li{
+    float: left;
+    display: block;
+    width: 25%;
+    
+}
+
+.meal_photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.meal_photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);
+}
+
+.meal_photo img:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s , opacity 0.5s;
+    opacity: 1;
+}
+
+
+/* --------------------HOW IT WORKS---------------------------*/
+
+
+.sec_steps{
+    background-color: rgba(255, 255, 255, 0.938);
+}
+
+.step_box:first-child{
+    text-align:right;
+    padding-right:3% ;
+    margin-top: 40px;
+
+}
+
+.step_box:last-child{
+    
+    padding-left: 5%;
+    margin-top: 80px;
+}
+
+.app_screen{
+    width: 40%;
+}
+
+.work_steps{
+    margin-bottom: 50px;
+}
+
+
+
+.work_steps div{
+    color:#ff6905 ;
+    border: 2px solid #ff6905;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    font-size: 150%;
+    margin-right: 20px;
+}
+
+.btn_app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* Cites------------------------------------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 0.7;
+    transition: transform 0.5s ,opacity 0.5s;
+    transform: scale(1);
+    background-color: black;
+    
+
+}
+
+.box img:hover{
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.city_features{
+    margin-bottom: 5px;
+}
+
+.icon_s{
+    display: inline;
+    text-align: center;
+    width: 30px;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 10px;
+
+    color: #ff6905 ;
+}
+
+
+/*  ----------------------Link-----------------------------*/
+
+a:link,
+a:visited{
+    color: #ff6905 ;
+    text-decoration: none;
+}
+
+a:hover,
+a:active{
+    color: #ad4602 ;
+    text-decoration: underline #ff6905;
+}
+
+
+/*  -------------------- Testimonial-----------------------------*/
+/*---------------------------------------------------------------*/
+
+.feedback{
+    background-image: linear-gradient(rgba(5, 3, 3, 0.801) ,rgba(5, 3, 3, 0.801) ) ,url(img/back-customers.jpg);
+    background-size: cover;
+    color:#ffffffe7 ;
+    background-image: cross-fade(00.5s);
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 20px;
+
+}
+
+
+/* --------------------------Section plan-----------------------------*/
+
+
+.sec_plan{
+    background-color: rgb(244, 247, 250);
+
+}
+
+.plan_box{
+    background-color: rgba(208, 250, 250, 0.911);
+    background-color: ;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px #ff6905;
+}
+
+.plan_box div{
+    padding: 10px;
+    border-radius: 2px solid #ff6905;
+}
+
+.plan_box div:first-of-type{
+    background-color:rgba(220, 255, 255, 0.863) ;
+    border-radius: 40px;
+}
+.plan_box div:last-of-type{
+    text-align: center;
+    border: 0;
+}
+.pb1{
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #ff6905;
+}
+
+.pb1 span{
+    font-size: 50%;
+    font-weight: 300;
+}
+
+.pb2{
+    font-size: 90%;
+}
+
+.plan_box ul{
+    list-style: none;
+}
+
+.plan_box ul li{
+    padding: 3px 0px;
+  
+}
+
+
+
+/* -------------------------Contact Form --------------------------------- */
+
+.contact_form{
+    width: 80% ;
+    margin: 0 auto;
+}
+
+select,
+textarea,
+input[type=text],
+input[type=email]{
+    width: 80%;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+textarea{
+    height: 100px;
+}
+
+
+
+/* ---------------Footer--------------------*/
+
+footer{
+    background-color: rgba(27, 20, 20, 0.801);
+    padding-bottom: 20px;
+    
+}
+
+.footer_nav{
+    float: left;
+    list-style: none;
+}
+
+.social_link{
+    float: right;
+    list-style: none;
+}
+
+.footer_nav li,
+.social_link li{
+    
+    padding: 10px;
+    margin: auto;
+    display: inline-block;
+}
+
+.footer_nav li a:visited,
+.footer_nav li a:link,
+.social_link li a:visited,
+.social_link li a:link{
+    color: cornsilk;
+}
+
+.footer_nav li a:hover,
+.footer_nav li a:active,
+.social_link li a:hover,
+.social_link li a:active{
+    color:#ff6905 ;
+    transition: color  0.35s;
+}
+
+footer p {
+    color: rgba(253, 253, 250, 0.938);
+    text-align: center;
+    font-size: 70%;
+    font-weight: 300;
+    margin-left: 40px;
+    margin-top: 10px;
+}
